@@ -6,19 +6,19 @@ const Projects = () => {
     {
       title: 'PMBA',
       category: 'Web Development',
-      description: 'A premium medical billing application with real-time updates and glassmorphic UI.',
+      description: 'A premium medical billing website with real-time updates and glassmorphic UI.',
       image: 'https://www.ibef.org/assets/images/Medical-Devices-Industry-2.jpg'
     },
     {
       title: 'Elitekem',
       category: 'Web Development',
-      description: 'Intelligent medical laboratory with dark mode aesthetics and smooth transitions.',
+      description: 'Intelligent medical laboratory website with dark mode aesthetics and smooth transitions.',
       image: 'https://sigmauniversity.ac.in/wp-content/uploads/2025/03/Medical-Laboratory-Technology-Set-to-Rule-the-World-Sigma-University.webp'
     },
     {
       title: 'Cibo',
       category: 'Web App',
-      description: 'A high-performance restaurant ordering app built with HTML, CSS, and JavaScript.',
+      description: 'A high-performance restaurant ordering website built with HTML, CSS, and JavaScript.',
       image: 'https://img.freepik.com/premium-photo/healthy-living-website-provide-information-healthy-recipe-snugly_31965-630550.jpg'
     }
   ];
