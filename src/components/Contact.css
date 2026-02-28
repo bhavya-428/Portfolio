@@ -1,0 +1,138 @@
+.contact-bento {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info-card, .contact-form-card {
+  padding: 3.5rem;
+  border-radius: 24px;
+}
+
+.contact-bento-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.contact-bento-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 320px;
+}
+
+.contact-social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.social-link-card {
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition-normal);
+}
+
+.social-link-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  background: var(--bg-secondary);
+}
+
+/* Form Styles */
+.bento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.bento-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bento-form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.bento-form-group input,
+.bento-form-group textarea {
+  width: 100%;
+  padding: 1.2rem;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.bento-form-group input:focus,
+.bento-form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  background: #fafafa;
+}
+
+.bento-submit-btn {
+  width: 100%;
+  padding: 1.2rem;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+}
+
+.bento-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(150, 255, 189, 0.3);
+  filter: brightness(1.1);
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .contact-bento {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-card, .contact-form-card {
+    padding: 2rem;
+  }
+  
+  .contact-bento-title {
+    font-size: 2.2rem;
+  }
+}

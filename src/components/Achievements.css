@@ -1,0 +1,142 @@
+.achievements-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card:last-child {
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.achievement-card {
+  padding: 2.5rem;
+  transition: var(--transition-normal);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-secondary);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  background: rgba(15, 23, 42, 0.05);
+  padding: 0.8rem;
+  border-radius: 12px;
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.achievement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.achievement-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.item-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.item-org {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.item-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  background: rgba(13, 148, 136, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.github-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.github-card .card-header {
+  justify-content: center;
+  width: 100%;
+}
+
+.github-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.github-activity-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #0D1117; /* GitHub Dark */
+  color: #ffffff;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.github-activity-btn:hover {
+  background: #161B22;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #30363D;
+}
+
+@media (max-width: 768px) {
+  .achievements-bento {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievement-item {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .item-date {
+    align-self: flex-start;
+  }
+}
