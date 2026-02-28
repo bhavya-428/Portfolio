@@ -19,11 +19,10 @@ const Hero = () => {
             Available for Internships & Projects
           </div>
           <h1 className="hero-title">
-            I'm <span className="gradient-text">Bhavya</span>
+            I'm <span className="gradient-text">bhavya</span>
           </h1>
           <p className="hero-description">
-            I build intelligent digital experiences that bridge the gap between
-            complex AI algorithms and intuitive, user-friendly design.
+           As a Computer Engineering student, I am passionate about developing robust, secure solutions that prioritize user experience.
           </p>
           <div className="hero-actions">
             <a href="/resume.pdf" className="btn-primary" download>Download Resume</a>

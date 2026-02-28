@@ -10,16 +10,20 @@ const About = () => {
           <div className="bento-card main-info glass">
             <h2 className="bento-title">About Me</h2>
             <p className="bento-text">
-              I'm Bhavya, a developer who loves building things that live on the internet. 
+             
+              Hey 👋,I'm bhavya, a diploma student who loves building things that live on the internet. 
               My goal is to always build products that provide pixel-perfect, performant experiences.
+               With a keen eye for detail and a passion for innovative solutions,
+                I focus on creating seamless, user-friendly interfaces while ensuring high performance and scalability. 
+                
             </p>
           </div>
 
           {/* Stats Cards Section */}
           <div className="bento-stats-group">
             <div className="bento-card stat-card glass">
-              <span className="stat-number">6 </span>
-              <span className="stat-label">Months Exp</span>
+              <span className="stat-number">- </span>
+              <span className="stat-label"> Exp</span>
             </div>
             <div className="bento-card stat-card glass">
               <span className="stat-number">10+</span>

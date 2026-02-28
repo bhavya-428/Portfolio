@@ -26,7 +26,7 @@ function App() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Bhavya. Built with React</p>
+          <p>&copy; {new Date().getFullYear()} bhavya. Built with React</p>
         </div>
       </footer>
     </div>

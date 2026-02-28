@@ -5,7 +5,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'JavaScript', 'Next.js']
+      skills: ['React', 'JavaScript', 'Next.js','Python']
     },
 
     {
