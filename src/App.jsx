@@ -7,11 +7,13 @@ import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import InteractiveBackground from './components/InteractiveBackground';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <InteractiveBackground />
       <Navbar />
       <main>
         <div className="reveal"><Hero /></div>
