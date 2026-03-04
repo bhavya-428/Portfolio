@@ -15,18 +15,17 @@ const About = () => {
         <div className="about-grid">
           <div className="about-main glass reveal">
             <p className="about-intro">
-              <span className="wave">👋</span> Hey, I'm Bhavya!
+              <span className="wave">👋</span> Hey, I'm Bhavya Sri Vakkalagadda..!
             </p>
             <p className="about-text">
-              I'm a <span className="highlight">Computer Engineering</span> diploma student at
-              Kallam Haranadha Reddy Institute of Technology who loves building things that live
-              on the internet.
+              I'm an enthusiastic <span className="highlight">Computer Engineering</span> student at
+              Kallam Haranadhareddy Institute of Technology who is passionate about 
+              applying technical knowledge to solve real-world problems.
             </p>
             <p className="about-text">
-              My goal is to always build products that provide <span className="highlight">pixel-perfect,
-              performant experiences</span>. With a keen eye for detail and a passion for innovative
-              solutions, I focus on creating seamless, user-friendly interfaces while ensuring
-              high performance and scalability.
+              My goal is to contribute to innovative projects as a <span className="highlight">Web Developer</span>. 
+              I focus on building pixel-perfect, performant experiences with a strong foundation 
+              in Python and web technologies.
             </p>
           </div>
 
@@ -36,8 +35,8 @@ const About = () => {
           </div>
 
           <div className="about-stat-card glass reveal reveal-delay-2">
-            <span className="stat-number">9.6</span>
-            <span className="stat-label">CGPA</span>
+            <span className="stat-number">8.5</span>
+            <span className="stat-label">Diploma CGPA</span>
           </div>
 
           <div className="about-letter-card glass reveal reveal-delay-3">
@@ -45,8 +44,8 @@ const About = () => {
           </div>
 
           <div className="about-stat-card glass reveal reveal-delay-4">
-            <span className="stat-number">2+</span>
-            <span className="stat-label">Internships</span>
+            <span className="stat-number">87.3%</span>
+            <span className="stat-label">X Board (SSC)</span>
           </div>
 
           <div className="about-chips reveal">

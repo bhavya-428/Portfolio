@@ -20,15 +20,15 @@ const Hero = () => {
           <p className="hero-greeting">{'> hello, world'}</p>
 
           <h1 className="hero-title">
-            I'm{' '}
-            <span className="hero-name gradient-text">Bhavya</span>
-            <span className="hero-role">Computer Engineer · Software Developer</span>
-          </h1>
+          I'm{' '}
+          <span className="hero-name gradient-text">Bhavya Sri</span>
+          <span className="hero-role">Web Developer · Computer Engineering Student</span>
+        </h1>
 
-          <p className="hero-description">
-            Passionate about building robust, secure, and user-centric digital solutions.
-            I turn complex problems into elegant, performant experiences.
-          </p>
+        <p className="hero-description">
+          An enthusiastic computer science student with strong programming skills in Python, 
+          eager to contribute to innovative projects and build high-performance web solutions.
+        </p>
 
           <div className="hero-actions">
             <a href="/resume.pdf" className="btn-primary" download>
@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
             <div className="hero-tech-float tech-float-1">⚛ React</div>
             <div className="hero-tech-float tech-float-2">🐍 Python</div>
-            <div className="hero-tech-float tech-float-3">🔧 Node.js</div>
+            <div className="hero-tech-float tech-float-3">🔧 HTML</div>
           </div>
         </div>
       </div>

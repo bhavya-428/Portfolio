@@ -4,27 +4,19 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'PMBA',
+      title: 'Online Food Ordering',
       category: 'Web Development',
-      description: 'A premium medical billing website with real-time updates and glassmorphic UI elements for seamless healthcare management.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1170',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      link: '#'
-    },
-    {
-      title: 'Elitekem',
-      category: 'Web Development',
-      description: 'Intelligent medical laboratory website featuring dark mode aesthetics, smooth transitions, and modern UI patterns.',
-      image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=1170',
-      tags: ['React', 'CSS', 'API'],
-      link: '#'
-    },
-    {
-      title: 'Cibo',
-      category: 'Web App',
-      description: 'A high-performance restaurant ordering platform built with interactive menus and smooth checkout experience.',
+      description: 'Developed a front-end platform where customers can browse menus, place orders, and check for payment options seamlessly.',
       image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1170',
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      tags: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+      link: '#'
+    },
+    {
+      title: 'Smart Heart Monitoring',
+      category: 'IOT System',
+      description: 'An IOT-based system that continuously monitors heart rate and automatically sends email alerts with GPS location in case of abnormal readings.',
+      image: 'https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=1170',
+      tags: ['IOT', 'GPS', 'Email Alerts', 'Python'],
       link: '#'
     }
   ];

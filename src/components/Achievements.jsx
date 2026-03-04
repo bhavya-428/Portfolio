@@ -4,36 +4,21 @@ import './Achievements.css';
 const Achievements = () => {
   const sections = [
     {
-      title: 'Internship Experience',
+      title: 'Education',
       items: [
-        { name: 'Software Developer Intern', org: 'PHANTASM Solutions Inc.', period: 'Winter 2025' },
-        { name: 'Python Intern', org: 'AI Research Lab', period: 'Winter 2023' }
-      ],
-      icon: '💼'
-    },
-    {
-      title: 'Hackathons',
-      items: [
-        { name: 'Smart India Hackathon', org: 'Ministry of Education', date: '2025' },
-        { name: 'TechGig Code Gladiators', org: 'TechGig', date: '2024' }
-      ],
-      icon: '🏆'
-    },
-    {
-      title: 'Certifications',
-      items: [
-        { name: 'IBM AI Engineering Professional', org: 'Coursera', date: '2024' },
-        { name: 'Python for Data Science', org: 'IBM', date: '2023' }
-      ],
-      icon: '📜'
-    },
-    {
-      title: 'Academics',
-      items: [
-        { name: 'Kallam Haranadha Reddy Institute of Technology', org: 'CSE Department', date: '2023-2026' },
-        { name: '9.6 CGPA — Semester 5', org: 'CSE Department', date: '2025' }
+        { name: 'Diploma in Computer Engineering', org: 'Kallam haranadhareddy institute of technology', period: 'CGPA: 8.5 | (2026)' },
+        { name: 'X (State Board)', org: 'Sri majety high school', period: '87.3% | 2023' }
       ],
       icon: '🎓'
+    },
+    {
+      title: 'Personal Hobbies',
+      items: [
+        { name: 'Self-Learning', org: 'Online Platforms', date: 'Continuous' },
+        { name: 'Problem Solving', org: 'Enthusiast', date: 'Always' },
+        { name: 'Knowledge Sharing', org: 'Community', date: 'Passionate' }
+      ],
+      icon: '✨'
     }
   ];
 

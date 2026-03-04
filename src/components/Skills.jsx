@@ -5,18 +5,18 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: '⚡',
-      title: 'Frontend',
-      skills: ['React', 'JavaScript', 'Next.js', 'HTML5', 'CSS3']
+      title: 'Programming',
+      skills: ['Python', 'C', 'Data Structures']
     },
     {
-      icon: '🧠',
-      title: 'Backend & AI',
-      skills: ['Python', 'Node.js', 'Express', 'MongoDB']
+      icon: '🌐',
+      title: 'Web Technologies',
+      skills: ['HTML', 'CSS', 'JavaScript', 'PHP']
     },
     {
-      icon: '🎨',
-      title: 'Design & Tools',
-      skills: ['Figma', 'Adobe XD', 'Framer', 'Git']
+      icon: '🛠️',
+      title: 'Tools & Platforms',
+      skills: ['VS Code', 'Git']
     }
   ];
 
