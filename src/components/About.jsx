@@ -15,7 +15,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-main glass reveal">
             <p className="about-intro">
-              <span className="wave">👋</span> Hey, I'm Bhavya Sri Vakkalagadda..!
+              <span className="wave">👋</span> Hey, I'm Bhavya Sri Vakkalagadda!
             </p>
             <p className="about-text">
               I'm an enthusiastic <span className="highlight">Computer Engineering</span> student at
