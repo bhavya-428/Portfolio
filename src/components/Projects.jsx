@@ -15,7 +15,7 @@ const Projects = () => {
       title: 'Smart Heart Monitoring',
       category: 'IOT System',
       description: 'An IOT-based system that continuously monitors heart rate and automatically sends email alerts with GPS location in case of abnormal readings.',
-      image: 'https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=1170',
+      image: 'https://cdn.britannica.com/25/214625-050-A37D76CC/heart-rate-monitor-illustration-heartbeat.jpg',
       tags: ['IOT', 'GPS', 'Email Alerts', 'Python'],
       link: '#'
     }
