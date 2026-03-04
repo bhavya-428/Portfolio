@@ -35,8 +35,8 @@ const About = () => {
           </div>
 
           <div className="about-stat-card glass reveal reveal-delay-2">
-            <span className="stat-number">8.5</span>
-            <span className="stat-label">Diploma CGPA</span>
+            <span className="stat-number">8.66</span>
+            <span className="stat-label">Diploma CGPA in Kallam Haranadha reddy institute of technology </span>
           </div>
 
           <div className="about-letter-card glass reveal reveal-delay-3">
@@ -44,13 +44,13 @@ const About = () => {
           </div>
 
           <div className="about-stat-card glass reveal reveal-delay-4">
-            <span className="stat-number">87.3%</span>
-            <span className="stat-label">X Board (SSC)</span>
+            <span className="stat-number">2+</span>
+            <span className="stat-label">Years of Experience</span>
           </div>
 
           <div className="about-chips reveal">
             <div className="about-chip">
-              <span className="chip-icon">📍</span> India
+              <span className="chip-icon">📍</span> Guntur,Andhra Pradesh,India
             </div>
             <div className="about-chip">
               <span className="chip-icon">🎓</span> CSE Diploma
