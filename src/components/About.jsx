@@ -1,4 +1,5 @@
-import profilePhoto from '../assets/profile.png';
+import React from 'react';
+import './About.css';
 
 const About = () => {
   return (
@@ -38,8 +39,8 @@ const About = () => {
             <span className="stat-label">Diploma CGPA in Kallam Haranadha reddy institute of technology </span>
           </div>
 
-          <div className="about-photo-card glass reveal reveal-delay-3">
-            <img src={profilePhoto} alt="Bhavya Sri" className="about-profile-img" />
+          <div className="about-letter-card glass reveal reveal-delay-3">
+            <span className="bg-letter">B</span>
           </div>
 
           <div className="about-stat-card glass reveal reveal-delay-4">
