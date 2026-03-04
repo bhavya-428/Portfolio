@@ -21,7 +21,7 @@ const Hero = () => {
 
           <h1 className="hero-title">
           I'm{' '}
-          <span className="hero-name gradient-text">Bhavya Sri</span>
+          <span className="hero-name gradient-text">Bhavya</span>
           <span className="hero-role">Web Developer · Computer Engineering Student</span>
         </h1>
 
@@ -51,7 +51,7 @@ const Hero = () => {
 
         <div className="hero-visual">
           <div className="hero-photo-container">
-            <div className="hero-photo-ring"></div>
+            <div className=""></div>
             <div className="photo-wrapper">
               <img src={profilePhoto} alt="Bhavya Vakkalagadda" className="profile-photo" />
             </div>

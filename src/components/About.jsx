@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import profilePhoto from '../assets/profile.png';
 
 const About = () => {
   return (
@@ -14,7 +13,7 @@ const About = () => {
         </div>
 
         <div className="about-grid">
-          <div className="about-main glass reveal">
+          <div className="card-bio glass reveal">
             <p className="about-intro">
               <span className="wave">👋</span> Hey, I'm Bhavya Sri Vakkalagadda!
             </p>
@@ -29,29 +28,34 @@ const About = () => {
               in Python and web technologies.
             </p>
           </div>
-          <div className="about-image-card glass reveal reveal-delay-3">
-            <img src={profilePhoto} alt="Bhavya Sri" className="about-profile-photo" />
-          </div>
 
-          <div className="about-stat-card glass reveal reveal-delay-4">
+          <div className="card-stat glass reveal reveal-delay-2">
+            <span className="stat-icon">🎓</span>
             <span className="stat-number">8.66</span>
-            <span className="stat-label">Diploma CGPA in Kallam Haranadha reddy institute of technology </span>
+            <span className="stat-label">Diploma CGPA <br/> <span>Kallam Haranadha Reddy Institute of Technology</span></span>
           </div>
 
-          <div className="about-stat-card glass reveal reveal-delay-1">
-            <span className="stat-number">10+</span>
-            <span className="stat-label">Projects Built</span>
+          <div className="card-stat glass reveal reveal-delay-3">
+            <span className="stat-icon">🏫</span>
+            <span className="stat-number">8.73</span>
+            <span className="stat-label">SSC CGPA <br/> <span>Sri Majety High School</span></span>
           </div>
 
-          <div className="about-stat-card glass reveal reveal-delay-2">
+          <div className="card-stat glass reveal reveal-delay-4">
+            <span className="stat-icon">⏳</span>
             <span className="stat-number">2+</span>
             <span className="stat-label">Years of Experience</span>
           </div>
 
-         
+          <div className="card-stat glass reveal reveal-delay-1">
+            <span className="stat-icon">🚀</span>
+            <span className="stat-number">10+</span>
+            <span className="stat-label">Projects Built</span>
+          </div>
+
           <div className="about-chips reveal">
             <div className="about-chip">
-              <span className="chip-icon">📍</span> Guntur,Andhra Pradesh,India
+              <span className="chip-icon">📍</span> Guntur, Andhra Pradesh, India
             </div>
             <div className="about-chip">
               <span className="chip-icon">🎓</span> CSE Diploma
