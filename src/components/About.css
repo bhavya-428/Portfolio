@@ -117,6 +117,7 @@
 .about-stat-card:hover {
   transform: translateY(-5px);
   border-color: rgba(0, 212, 255, 0.2);
+  opacity: 1;
 }
 
 .stat-number {
