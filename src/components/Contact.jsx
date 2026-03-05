@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setErrorMessage(data.error || 'Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setStatus('error');
+      setErrorMessage('Failed to send message. Please try again later.');
+    }
+  };
   return (
     <section id="contact" className="contact-section section-padding">
       <div className="container">
@@ -45,24 +83,50 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-card glass reveal">
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
                   <label>Name</label>
-                  <input type="text" placeholder="Your name" required />
+                  <input 
+                    type="text" 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Your name" 
+                    required 
+                    disabled={status === 'loading'}
+                  />
                 </div>
                 <div className="form-group">
                   <label>Email</label>
-                  <input type="email" placeholder="your@email.com" required />
+                  <input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="your@email.com" 
+                    required 
+                    disabled={status === 'loading'}
+                  />
                 </div>
               </div>
               <div className="form-group">
                 <label>Message</label>
-                <textarea placeholder="Tell me about your project..." rows="6" required></textarea>
+                <textarea 
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Tell me about your project..." 
+                  rows="6" 
+                  required
+                  disabled={status === 'loading'}
+                ></textarea>
               </div>
-              <button type="submit" className="submit-btn">
-                Send Message →
+              <button type="submit" className="submit-btn" disabled={status === 'loading'}>
+                {status === 'loading' ? 'Sending...' : 'Send Message →'}
               </button>
+              {status === 'success' && <p className="status-message success">Message sent successfully!</p>}
+              {status === 'error' && <p className="status-message error">{errorMessage}</p>}
             </form>
           </div>
         </div>
