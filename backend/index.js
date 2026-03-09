@@ -1,6 +1,7 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
+import 'dotenv/config';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -8,10 +9,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Replace these with your actual email credentials or use environment variables
-// For Gmail, you might need to use an App Password
+// These should be set in your .env file
 const EMAIL_USER = process.env.EMAIL_USER || 'v.bhavyasri2001@gmail.com';
-const EMAIL_PASS = process.env.EMAIL_PASS || ''; // User should provide this
+const EMAIL_PASS = process.env.EMAIL_PASS; 
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
